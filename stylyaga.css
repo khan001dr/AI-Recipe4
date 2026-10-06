@@ -1,0 +1,189 @@
+:root {
+  --green: #0f8a5f;
+  --green-soft: #d9f5e8;
+  --orange: #ff9f0a;
+  --bg: #f7f6f2;
+  --line: #e8e8e4;
+  --text: #1c1c1c;
+  --muted: #6b6b66;
+}
+
+* { box-sizing: border-box; margin: 0; }
+
+body {
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.header {
+  background: #fff;
+  border-bottom: 1px solid var(--line);
+}
+.header-content {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+}
+.nav h1 {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--green);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  list-style: none;
+  padding: 0;
+}
+.list {
+  text-decoration: none;
+  color: var(--text);
+  font-size: 15px;
+  font-weight: 500;
+}
+.logo {
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: var(--green-soft);
+  border: 2px solid #b6ecd2;
+  color: var(--green);
+  font-weight: 700;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.layout {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 36px 20px;
+  display: grid;
+  grid-template-columns: 370px 1fr;
+  gap: 34px;
+  align-items: start;
+}
+.sidebar { display: grid; gap: 26px; }
+
+.card {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, .04);
+}
+.panel { padding: 24px 26px; }
+
+.panel h2 {
+  font-size: 19px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.label { font-size: 13px; color: var(--muted); }
+.label-up {
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  margin: 20px 0 8px;
+}
+
+.add { display: flex; gap: 10px; }
+.add input {
+  flex: 1;
+  min-width: 0;
+  padding: 11px 13px;
+  border: 1px solid #d6d6d0;
+  border-radius: 10px;
+  font: inherit;
+  font-size: 14px;
+}
+.add input:focus,
+select:focus { outline: 2px solid var(--green); outline-offset: 1px; }
+.add button {
+  width: 44px;
+  border: 0;
+  border-radius: 10px;
+  background: var(--green);
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.prefs-title {
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+.checks {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin: 8px 0 20px;
+}
+.checks label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 11px 12px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  font-size: 13.5px;
+  cursor: pointer;
+}
+select {
+  width: 100%;
+  margin-top: 8px;
+  padding: 12px;
+  border: 1px solid #d6d6d0;
+  border-radius: 10px;
+  font: inherit;
+  font-size: 14px;
+  background: #fff;
+}
+.generate {
+  width: 100%;
+  margin-top: 18px;
+  padding: 15px;
+  border: 0;
+  border-radius: 12px;
+  background: var(--orange);
+  font: inherit;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: filter .15s;
+}
+.generate:hover { filter: brightness(.95); }
+
+.card_recipe {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero{
+    background: linear-gradient(135deg, #eef9f3 0%, #ffffff 100%); 
+    border-radius: 16px;
+    padding: 40px;
+    border: 1px solid #e2f0e7;
+    min-height: 200px;
+}
+
+.card_recipe h1{
+    font-size: 24px;
+    color: #1a202c;
+    font-weight: 700;
+}

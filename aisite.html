@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Powered Recipe Assistant</title>
+    <link rel="shortcut icon" href="images/LOGO 1.svg" type="image/x-icon">
+    <link rel="stylesheet" href="stylyaga.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="header">
+  <div class="header-content">
+    <nav class="nav">
+      <h1 class="Name">AI Chef</h1>
+      <ul class="nav-list">
+        <li><a class="list" href="fav.html">My Recipe Book</a></li>
+        <li><a class="logo" href="acc.html">AN</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main class="layout">
+  <aside class="sidebar">
+    <section class="card panel">
+      <h2> What's in the fridge?</h2>
+      <div class="label label-up">Add ingredient</div>
+      <form class="add" id="addForm">
+        <input id="ingInput" placeholder="e.g., chicken, tomatoes..." autocomplete="off">
+        <button type="submit" aria-label="Add ingredient">+</button>
+      </form>
+    </section>
+
+    <section class="card panel">
+      <h3 class="prefs-title">Preferences</h3>
+      <div class="label">Dietary Restrictions</div>
+      <div class="checks">
+        <label><input type="checkbox" id="dairy"> Dairy-Free</label>
+        <label><input type="checkbox" id="vegan"> Vegan</label>
+      </div>
+      <div class="label">Equipment</div>
+      <select id="equipment">
+        <option>Any (Stovetop / Oven)</option>
+        <option>Stovetop only</option>
+        <option>Oven only</option>
+      </select>
+      <button class="generate" id="generate"> Generate Recipe</button>
+    </section>
+  </aside>
+  <article class="card_recipe">
+    <div class="hero">
+      <h1 style="margin:0">You might like these recipes</h1>
+    </div>
+  </article>
+</main>
+<section class="right-text">
+
+</section>
+</body>
+</html>
